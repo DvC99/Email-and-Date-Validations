@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <!-- Favicons -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="../js/index.js">
+  </script>
+  <link rel="stylesheet" href="../css/style.css">
+  <title>I+D Compiladores</title>
+
+</head>
+
+<body class="text-center">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand">I+D</h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link " href="../index.html">Home</a>
+          <a class="nav-link" href="validarURL.html">Validar URl</a>
+          <a class="nav-link active" href="/validarFecha.html">Validar formato de fecha</a>
+        </nav>
+      </div>
+    </header>
+    <main role="main" class="inner cover text-left">
+      <h1 class="cover-heading text-center">Lenguaje de JavaScript, formato de una fecha</h1>
+      <p class="lead">Validar una fecha con formato dd/mm/aaaa.</p>
+      <form name="form">
+        <div class="form-group">
+          <label for="fecha" class="text-left">Fecha</label>
+          <input type="text" class="form-control" id="fecha" aria-describedby="fechaFormart"
+            onchange="return esfechavalida();">
+          <small id="fechaFormart" class="form-text text-muted text-right">Coloque la fecha que desea validar
+            formato.</small>
+        </div>
+        <p class="lead ">
+          <a href="#" class="btn btn-lg btn-secondary">Validar Fecha</a>
+        </p>
+      </form>
+    </main>
+
+
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p> Respuesta del I+D de la materia compiladores de la
+          <a href="https://www.uninorte.edu.co/">Universidad del Norte</a> <br> by
+          <a href="https://github.com/johansbg"> Johan Burgos </a>-
+          <a href="https://github.com/OmarMejiaSuarez"> Omar Mejia </a>-
+          <a href="https://github.com/DvC99"> Daniel Valencia </a>-
+          <a href="https://github.com/RubenCameroAmador"> Ruben Camero </a>-
+          <a href="#">Yulieth Zambrano</a>.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
