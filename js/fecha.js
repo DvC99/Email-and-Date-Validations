@@ -5,9 +5,8 @@ function esfechavalida() {
     if (fecha.length !== 10)
         error = true;
     //Se valida que la fecha este separada por "/"
-    if (!/^(...)\/(...)\/(...)$/.test(fecha))
+    if (!/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(fecha))
         error = true;
-    
     var fecha = fecha.split("/");
     var dia = fecha[0];
     var mes = fecha[1];
@@ -23,10 +22,8 @@ function esfechavalida() {
         error = true;
     if (!unmes)
         error = true;
-    if (!unaño)
+    if (!unaño) 
         error = true;
-    //Se valida si los datos que entran son enteros
-    error = (isNaN(dia) || isNaN(mes) || isNaN(año));
     //Se valida el año bisiesto
     var DiasXMes = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     if (mes === 1 || mes > 2)
@@ -39,7 +36,8 @@ function esfechavalida() {
         if (laño === true && dia > 29)
             error = true;
     }
-    if (error === true) {
+    console.log(error, undia, unmes, unaño);
+    if (error) {
         document.getElementById('fecha').innerHTML = '<div class="alert alert-danger" role="alert">Formato de fecha no valida</div>';
     } else {
         document.getElementById('fecha').innerHTML = '<div class="alert alert-success" role="alert">Formato de fecha Valida</div>';
