@@ -1,4 +1,5 @@
 function esfechavalida() {
+    var error = false;
     var fecha = document.form.fecha.value;
     if (fecha.length !== 10)
         error = true;
